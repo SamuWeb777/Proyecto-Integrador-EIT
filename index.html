@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <title> Proyecto Integrador - Etapa 1</title>
+</head>
+
+<body>
+
+  <header class="container-fluid ">
+    <div class="row" style="background-color: grey">
+      <div class=" my-5 titulo-principal">
+        <h1 class="tit-1">TecnoNautas-EIT</h1>
+      </div>
+    </div>
+    <div class="row">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  " data-bs-theme="dark">
+      <div class="container-fluid ">
+        <form class="d-flex" role="search">
+          <input class="form-control ms-1 pe-5" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navegador" id="navbarNav">
+          <ul class="navbar-nav me-auto menu-link">
+            <li class="nav-item">
+              <a class="nav-link link" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="../pages/contacto.html">Contactos</a>
+            </li>
+            <li class="nav-item link dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages/computadoras.html">Computadoras</a></li>
+                <li><a class="dropdown-item" href="pages/celulares.html">Celulares</a></li>
+                <li><a class="dropdown-item" href="pages/relojes.html">Smart Watch</a></li>
+                <li><a class="dropdown-item" href="pages/camaras.html">Camaras</a></li>
+                <li><a class="dropdown-item" href="pages/auriculares.html">Auriculares</a></li>
+                <li><a class="dropdown-item" href="pages/gamming.html">Gamming</a></li>
+              </ul>
+          </ul>
+          <div class="d-flex cabece">
+            <a class="me-4" href="" ><i class="fa-solid fa-right-to-bracket fa-2xl" style="color: #e7ecf3;"></i></a>
+            <a href="../pages/carrito.html" class="nav-link text-reset me-3 ">
+              <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+     
+    </nav>
+  </div>
+  </header>
+  <!--*******************CARRUSEL*************************-->
+  <section class="container-fluid carrusel ">
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/oferta.jpg" class="d-block w-100 imagen1" alt="CARRUSEL 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>MOTO G10 PLUS</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/oferta-celular.webp" class="d-block w-100 imagen1" alt="CARRUSEL 2">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/oferta-play.png" class="d-block w-100 imagen1" alt="CARRUSEL 3">
+          <div class="carousel-caption d-none d-md-block titulo">
+            <!-- <h5>PLAY STATION 5</h5>
+            <p>Some representative placeholder content for the third slide.</p>-->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!--***************CATEGORIAS******************-->
+  <div class="categorias">
+    <hr>
+    <div class="pestaña">
+      <h6>Categorias</h6>
+    </div>
+    <h4>Buscar por categorias:</h4>
+    <div class="iconos">
+      <div class="icono-1">
+        <a href="pages/computadoras.html"><i class="fa-solid fa-laptop"></i></a><br>
+        <p>Computadoras</p>
+
+      </div>
+      <div class="icono-1">
+        <a href=""><i class="fa-solid fa-phone"></i></a><br>
+        <p>Celulares</p>
+      </div>
+      <div class="icono-1">
+        <i class="fa-solid fa-clock"> </i><br>
+        <p>SmartWatch</p>
+      </div>
+      <div class="icono-1">
+        <a href=""><i class="fa-solid fa-camera"></i></a><br>
+        <p>Camaras</p>
+      </div>
+      <div class="icono-1">
+        <a href=""><i class="fa-solid fa-headphones"></i></a><br>
+        <p>Auriculares</p>
+      </div>
+      <div class="icono-1">
+        <a href=""><i class="fa-solid fa-gamepad"></i></a><br>
+        <p>Gamming</p>
+      </div>
+
+    </div>
+    <hr>
+  </div>
+  <!--*******************PRODUCTOS******************-->
+  <main class="container-fluid categorias">
+
+    <div class="pestaña">
+      <h6 class="">Algunos productos</h6>
+    </div>
+
+    <section class="row my-5">
+      <!--productos-->
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/note1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+
+        </div>
+      </div><!--.card1-->
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/note-1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card2-->
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/gamming-1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card3-->
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/auricular-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card4-->
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/celu-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card5-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/gamming-2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card6-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/reloj-3.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card7-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/celu-3.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card8-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/gamming-3.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card9-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/note7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card10-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/auricular-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card11-->
+
+      <div class="card col-3 m-3" style="width: 18rem;">
+        <img src="img/camara-2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item text-uppercase">Color</li>
+            <li class="list-group-item">Caracteristicas</li>
+            <li class="list-group-item">Precio</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Comprar ahora</a>
+          <hr>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div><!--.card12-->
+    </section>
+    <hr>
+  </main>
+  <!--*****************SERVICIOS*****************-->
+  <div class="caract">
+    <div class="caract-1">
+        <i class="fa-solid fa-truck-fast fa-2xl"></i>
+      <h6><strong>ENTREGA RAPIDA Y GRATUITA</strong> </h6>
+      <P>Entrega gratuita para <br> pedidos superiores a $10000.</P>
+    </div>
+    <div class="caract-1">
+        <i class="fa-solid fa-headset fa-2xl"></i>
+      <h6><strong> ATENCION AL CLIENTE</strong></h6>
+      <P>Atencion al cliente amigable y responsable.</P>
+    </div>
+    <div class="caract-1">
+        <i class="fa-solid fa-shield fa-2xl"></i>
+      <h6> <strong> GARANTIA</strong></h6>
+      <P>Te devolvemos el dinero en 30 días.</P>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
+    <div class="row pie">
+      <div class="col-3 aa">
+        <h2><strong> Navegación</strong></h2>
+        <a href="" class="link">Inicio</a><br>
+        <a href="" class="link">Contactos</a><br>
+        <a href="" class="link">Nosotros</a><br>
+        <a href="" class="link">Productos</a>
+      </div>
+      <div class="col-3 aa">
+        <h2><strong> Contactanos</strong></h2>
+        <p>Domicilio <br> Email@gmail.com <br>+54-012-4567-895</p>
+      </div>
+      <div class="col-3 aa">
+        <h2><strong> Enlaces rápidos</strong></h2>
+        <a href="" class="aaa link">Politica y privacidad</a><br>
+        <a href="" class="aaa link">Condiciones de uso</a><br>
+        <a href="" class="aaa link">Preguntas frecuentes</a>
+      </div>
+      <div class="col-3 aa">
+        <h2><strong> Descarga la App</strong></h2>
+        <img class="google" src="img/google-play-badge.png" alt="google play">
+        <img class="google" src="img/app-store.png" alt="">
+      </div>
+    </div>
+    <hr>
+    <p class="copyrigth">&copy; 2023 Samuel Acuña. Todos los derechos reservados</p>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
+<!--build {
+    emptyOutDir: true,
+    rollupOptiones: {
+        input: {
+        carrito: resolve("pages/carrito.html"),
+        contacto: resolve("pages/contacto.html"),
+        nosotros: resolve("pages/nosotros.html"),
+        inicio: resolve("index.html")
+        }
+    }-->
