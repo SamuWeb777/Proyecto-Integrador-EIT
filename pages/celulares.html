@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Productos - Celulares</title>
 </head>
 
@@ -12,7 +13,7 @@
     <header class="container-fluid ">
         <div class="row" style="background-color: grey">
             <div class=" my-5 titulo-principal">
-                <h1 class="tit-1">TecnoNautas-EIT</h1>
+                <h1 class="tit-1 animate__animated animate__bounce">TecnoNautas-EIT</h1>
             </div>
         </div>
         <div class="row">
@@ -20,7 +21,7 @@
                 <div class="container-fluid ">
                     <form class="d-flex" role="search">
                         <input class="form-control ms-1 pe-5" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
+                        <button class="btn btn-outline-secondary ms-2" type="submit">Buscar</button>
                     </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -52,15 +53,42 @@
                                     <li><a class="dropdown-item" href="gamming.html">Gamming</a></li>
                                 </ul>
                         </ul>
-                        <div class="d-flex cabece">
-                            <a class="me-4" href=""><i class="fa-solid fa-right-to-bracket fa-2xl"
-                                    style="color: #e7ecf3;"></i></a>
-                            <a href="../pages/carrito.html" class="nav-link text-reset me-3 ">
-                                <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
+                <button id="switch" class="switch" >
+					<span><i class="fa-solid fa-sun"></i></span>
+					<span><i class="fa-solid fa-moon"></i></span>
+				</button>
+          <div class="d-flex cabece">
+            <div class="d-flex">
+            <div class="dropdown dropstart">
+
+              <a type="button" class="me-5 p-3 carrito-po"  data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
+              </a>
+              <ul id="carrito" class="dropdown-menu mx-2">
+                <table id="lista-carrito" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                  <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                  <button id="procesar-pedido" class="btn btn-success">Procesar Compra</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+          </div>
 
             </nav>
         </div>
@@ -70,30 +98,29 @@
         <h1 class="my-5">Celulares</h1>
     </div>
     <hr>
-    <main class="container-fluid categorias">
-
-        <div class="pestaña">
+    <section class="categorias">
+    <div class="pestaña">
             <h6 class="">Celulares</h6>
         </div>
-
-        <section class="row my-5">
+    </section>
+    <main class="container-fluid ">
+        <section id="lista-productos" class="row my-5">
             <!--productos-->
-            <div class="card col-3 m-3" style="width: 18rem;">
-                <img src="../img/celu-1.png" class="card-img-top" alt="...">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
+                <img src="../img/celu-1.png" class="card-img-top img-producto" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Samsung Galaxy S23+</h5>
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li class="list-group-item text-uppercase">Color</li>
+                        <li class="list-group-item text-uppercase color">Color</li>
                         <li class="list-group-item">Caracteristicas</li>
-                        <li class="list-group-item">Precio</li>
+                        <li class="list-group-item precio">100.000</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
                     <hr>
-                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    <a href="#" class="btn btn-secondary agregar-carrito">Agregar al carrito</a>
 
                 </div>
             </div><!--.card1-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/celu-2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Samsung Galaxy S23 Ultra</h5>
@@ -102,12 +129,12 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div><!--.card2-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/celu-3.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Samsung Galaxy Z FOLD4</h5>
@@ -116,12 +143,12 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div><!--.card3-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/celu-4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Motorola Edge 30 Ultra</h5>
@@ -130,7 +157,7 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
@@ -169,6 +196,7 @@
         <p class="copyrigth">&copy; 2023 Samuel Acuña. Todos los derechos reservados</p>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

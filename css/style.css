@@ -8,7 +8,54 @@
 body{
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
+    transition: .3s ease all;
 }
+.switch{
+    background: #343D58;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+  }
+  .switch ::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .switch.active {
+    background: orange;
+    color: #000;
+  }
+  .switch.active::after{
+    right: 0;
+    left: unset;
+  }
+  .switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+  body.dark{
+    background: #000;
+ box-shadow: #ACABAB;
+}
+/* body.dark a{
+color: #fff;
+} */
 /*--------------------HEADER-----------------------*/
 nav{
     width: 100%;
@@ -49,7 +96,8 @@ right: 0;
 }
 .tit-1{
     font-weight: 800;
-    font-size: 50px;
+    font-size: 60px;
+    text-decoration: none;
 }
 
 
@@ -68,13 +116,21 @@ right: 0;
     padding: 0;
     display: inline-block;
 }
-.nosotros-iconos i:hover{
+.nosotros-iconos i.ins:hover{
     color: crimson;
-    transition: all .6s;
+    transition: all .4s;
 }
 .nosotros-iconos i.fb:hover{
-    color: crimson;
-    transition: all .6s;
+    color: blue;
+    transition: all .4s;
+}
+.nosotros-iconos i.twi:hover{
+    color: cornflowerblue;
+    transition: all .4s;
+}
+.nosotros-iconos i.mail:hover{
+    color: red;
+    transition: all .4s;
 }
 
 .tarjetas img{
@@ -181,10 +237,11 @@ footer input{
 }
 /*--------------CATEGORIAS-----------------*/
 .categorias{
-    
+    contain: paint;
     margin: auto;
-    padding: 0;
-    width: 90%;
+    padding: 10px;
+    width: 100%;
+    
 }
 .categorias h6{
     color: #db4444;
@@ -246,3 +303,36 @@ footer input{
     margin-top: 5px;
     
 }
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration:underline ;
+}
+.titulo-nosotros{
+    text-decoration: none;
+}
+/*----------------seccion carritoo--------------*/
+
+.btn-pagar{
+    display: block;
+    width: 100%;
+    transition: .3s;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+}
+.btn-pagar:hover{
+    scale: 1.05;
+}
+.btn-agregar{
+    scale: 1.05;
+}
+
+/*seccion de responsive*/
+@media screen and (max-widht:850px) {
+    .caract{
+        display: block;
+    }
+    
+} 

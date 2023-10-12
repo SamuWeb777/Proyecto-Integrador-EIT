@@ -5,8 +5,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-
-        <title> Proyecto Integrador - Etapa 1 (Nosotros)</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <title> Proyecto Integrador - Etapa 2 (Nosotros)</title>
     </head>
 
     <body>
@@ -14,31 +15,31 @@
       <header class="container-fluid ">
         <div class="row" style="background-color: grey">
           <div class=" my-5 titulo-principal">
-            <h1 class="tit-1">TecnoNautas-EIT</h1>
+            <h1 class="tit-1 animate__animated animate__bounce">TecnoNautas-EIT</h1>
           </div>
         </div>
-        <div class="row">
         <nav class="navbar navbar-expand-lg bg-body-tertiary  " data-bs-theme="dark">
-          <div class="container-fluid ">
+          <div class="container-fluid d-flex justify-content-between ">
             <form class="d-flex" role="search">
               <input class="form-control ms-1 pe-5" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
+              <button class="btn btn-outline-secondary ms-2" type="submit">Buscar</button>
             </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navegador" id="navbarNav">
+              
               <ul class="navbar-nav me-auto menu-link">
                 <li class="nav-item">
-                  <a class="nav-link link" aria-current="page" href="/index.html">Inicio</a>
+                  <a class="nav-link link active" aria-current="page" href="/index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link" href="../pages/nosotros.html">Nosotros</a>
+                  <a class="nav-link link active" href="../pages/nosotros.html">Nosotros</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link link" href="../pages/contacto.html">Contactos</a>
+                <li class="nav-item active">
+                  <a class="nav-link link active" href="../pages/contacto.html">Contactos</a>
                 </li>
-                <li class="nav-item link dropdown">
+                <!-- <li class="nav-item link dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Productos
@@ -51,36 +52,62 @@
                     <li><a class="dropdown-item" href="../pages/auriculares.html">Auriculares</a></li>
                     <li><a class="dropdown-item" href="../pages/gamming.html">Gamming</a></li>
                   </ul>
+                </li> -->
               </ul>
-              <div class="d-flex cabece">
-                <a class="me-4" href="" ><i class="fa-solid fa-right-to-bracket fa-2xl" style="color: #e7ecf3;"></i></a>
-                <a href="../pages/carrito.html" class="nav-link text-reset me-3 ">
-                  <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
-                </a>
               </div>
             </div>
-          </div>
-         
+            <button id="switch" class="switch" >
+              <span><i class="fa-solid fa-sun"></i></span>
+              <span><i class="fa-solid fa-moon"></i></span>
+            </button>
+              <div class="d-flex cabece">
+                <div class="dropdown dropstart">
+                  
+                  <a type="button" class="me-5 p-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
+                  </a>
+                  <ul id="carrito" class="dropdown-menu mx-2">
+                    <table id="lista-carrito" class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Imagen</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Precio</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                      </tbody>
+                    </table>
+                    <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                      <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                      <button id="procesar-pedido" class="btn btn-danger">Procesar Compra</button>
+                    </div>
+                  </ul>
+                </div>
+              </div>
         </nav>
-      </div>
+      
       </header>
         <main class="container nosotros">
             <div class="row my-5">
                 <div class="col-7  ">
-                    <h1>Sobre <span>nosotros</span></h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quis consectetur alias asperiores
-                        sint sit!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ullam molestiae eligendi eos, necessitatibus pariatur veritatis 
-                            unde fuga fugit vitae nihil, voluptatum expedita cum temporibus!</p>
+                    <h1 class="titulo-nosotros">Sobre <span>nosotros</span></h1>
+                    <h3>Nuestra Misión: Innovación, Integridad y Compromiso en Cada Paso</h3>
+                    <p>"En TecnoNautas-EIT, nuestra pasión es crear soluciones innovadoras que marcan la diferencia. Desde nuestros humildes comienzos,
+                      nos hemos esforzado por ofrecer productos/servicios de alta calidad que satisfagan las necesidades de nuestros clientes. Nuestra empresa 
+                      se basa en valores sólidos de integridad, compromiso y excelencia. Con un equipo apasionado y diverso de profesionales altamente capacitados,
+                      estamos dedicados a impulsar el cambio y el progreso en la industria. Creemos en la importancia de establecer relaciones sólidas con nuestros 
+                      clientes, colaboradores y comunidades locales.
+                      Estamos emocionados de ser parte de su historia y esperamos continuar siendo su socio confiable en el futuro."</p>
+                        
                     <div class="nosotros-iconos">
                         <ul>
-                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook-square fa-3x fb"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com"></a><i class="fa-brands fa-twitter-square fa-3x"></i></li>
-                            <li><a href="https://instagram.com"></a><i class="fa-brands fa-instagram-square fa-3x"></i>
-                            </li>
-                            <li><a href="mailt:max@gmail.com"></a><i class="fa fa-envelope-square fa-3x"></i></li>
+                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook-square fa-3x fb"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-twitter-square fa-3x twi"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram-square fa-3x ins"></i></a></li>
+                            <li><a href="mailt:max@gmail.com"><i class="fa fa-envelope-square fa-3x mail"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,8 +116,14 @@
                         <img class="img-fluid" src="/img/aboutt.webp" alt="">
                     </div>
                 </div>
+                <h1 class="titulo-nosotros"><span>Estamos aqui:</span></h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.6190300170038!2d-65.
+                30354302471758!3d-24.185090184802945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f43ac7b8b3b%3A0xb6d57014df9bdb52!
+                2sGral.%20Belgrano%20563%2C%20Y4600ABI%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1697072379331!5m2!1ses-
+                419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-
+                when-downgrade"></iframe>
             </div>
-        </main>
+          </main>
         <footer class="container-fluid">
           <div class="row pie">
             <div class="col-3 aa">
@@ -120,5 +153,7 @@
           <p class="copyrigth">&copy; 2023 Samuel Acuña. Todos los derechos reservados</p>
         </footer>
         <script type="module" src="/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </body>
 </html>

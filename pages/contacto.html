@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <title> Proyecto Integrador - Etapa 1 (Contacto)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title> Proyecto Integrador - Etapa 2  (Contacto)</title>
+
   </head>
 
   <body>
@@ -13,31 +16,31 @@
     <header class="container-fluid ">
       <div class="row" style="background-color: grey">
         <div class=" my-5 titulo-principal">
-          <h1 class="tit-1">TecnoNautas-EIT</h1>
+          <h1 class="tit-1 animate__animated animate__bounce">TecnoNautas-EIT</h1>
         </div>
       </div>
-      <div class="row">
       <nav class="navbar navbar-expand-lg bg-body-tertiary  " data-bs-theme="dark">
-        <div class="container-fluid ">
+        <div class="container-fluid d-flex justify-content-between ">
           <form class="d-flex" role="search">
             <input class="form-control ms-1 pe-5" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
+            <button class="btn btn-outline-secondary ms-2" type="submit">Buscar</button>
           </form>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse navegador" id="navbarNav">
+            
             <ul class="navbar-nav me-auto menu-link">
               <li class="nav-item">
-                <a class="nav-link link" aria-current="page" href="/index.html">Inicio</a>
+                <a class="nav-link link active" aria-current="page" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav-link link active" href="../pages/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link link" href="../pages/contacto.html">Contactos</a>
+              <li class="nav-item active">
+                <a class="nav-link link active" href="../pages/contacto.html">Contactos</a>
               </li>
-              <li class="nav-item link dropdown">
+              <!-- <li class="nav-item link dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Productos
@@ -50,18 +53,43 @@
                   <li><a class="dropdown-item" href="../pages/auriculares.html">Auriculares</a></li>
                   <li><a class="dropdown-item" href="../pages/gamming.html">Gamming</a></li>
                 </ul>
+              </li> -->
             </ul>
-            <div class="d-flex cabece">
-              <a class="me-4" href="" ><i class="fa-solid fa-right-to-bracket fa-2xl" style="color: #e7ecf3;"></i></a>
-              <a href="../pages/carrito.html" class="nav-link text-reset me-3 ">
-                <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
-              </a>
             </div>
           </div>
-        </div>
-       
+          <button id="switch" class="switch" >
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fa-solid fa-moon"></i></span>
+          </button>
+            <div class="d-flex cabece">
+              <div class="dropdown dropstart">
+                
+                <a type="button" class="me-5 p-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
+                </a>
+                <ul id="carrito" class="dropdown-menu mx-2">
+                  <table id="lista-carrito" class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
+                  <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                    <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                    <button id="procesar-pedido" class="btn btn-danger">Procesar Compra</button>
+                  </div>
+                </ul>
+              </div>
+            </div>
       </nav>
-    </div>
+    
     </header>
     <section class="container contactos my-5">
       <h5>¿Tenes alguna consulta?</h5>
@@ -123,5 +151,7 @@
       <p class="copyrigth">&copy; 2023 Samuel Acuña. Todos los derechos reservados</p>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </body>
 </html>

@@ -20,7 +20,7 @@
                 <div class="container-fluid ">
                     <form class="d-flex" role="search">
                         <input class="form-control ms-1 pe-5" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success ms-2" type="submit">Buscar</button>
+                        <button class="btn btn-outline-secondary ms-2" type="submit">Buscar</button>
                     </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -52,15 +52,41 @@
                                     <li><a class="dropdown-item" href="gamming.html">Gamming</a></li>
                                 </ul>
                         </ul>
-                        <div class="d-flex cabece">
-                            <a class="me-4" href=""><i class="fa-solid fa-right-to-bracket fa-2xl"
-                                    style="color: #e7ecf3;"></i></a>
-                            <a href="../pages/carrito.html" class="nav-link text-reset me-3 ">
-                                <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
+                <button id="switch" class="switch" >
+					<span><i class="fa-solid fa-sun"></i></span>
+					<span><i class="fa-solid fa-moon"></i></span>
+				</button>
+          <div class="d-flex cabece">
+            <div class="d-flex">
+            <div class="dropdown dropstart">
+
+              <a type="button" class="me-5 p-3 carrito-po"  data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-store fa-2xl" style="color: #e7ecf3;"></i>
+              </a>
+              <ul id="carrito" class="dropdown-menu mx-2">
+                <table id="lista-carrito" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                  <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                  <button id="procesar-pedido" class="btn btn-success">Procesar Compra</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+          </div>
 
             </nav>
         </div>
@@ -78,7 +104,7 @@
 
         <section class="row my-5">
             <!--productos-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/camara-1.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">sony Alpha 7 III ILCE</h5>
@@ -87,13 +113,13 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
 
                 </div>
             </div><!--.card1-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/camara-2.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Canon EOS Rebel t7</h5>
@@ -102,12 +128,12 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div><!--.card2-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/camara-3.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nikon kit D3500</h5>
@@ -116,12 +142,12 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div><!--.card3-->
-            <div class="card col-3 m-3" style="width: 18rem;">
+            <div class="card col-3 m-3 p-3 mb-2 bg-dark-subtle text-emphasis-dark" style="width: 18rem;">
                 <img src="../img/camara-4.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Camara web GADNIC</h5>
@@ -130,7 +156,7 @@
                         <li class="list-group-item">Caracteristicas</li>
                         <li class="list-group-item">Precio</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <a href="#" class="btn btn-success">Comprar ahora</a>
                     <hr>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
