@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
   <header class="container-fluid ">
     <div class="row" style="background-color: grey">
       <div class=" my-5 titulo-principal">
-        <h1 class="tit-1 animate__animated animate__bounce">TecnoNautas-EIT</h1>
+        <h1 class="tit-1 animate__animated animate__heartBeat">TecnoNautas-EIT</h1>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary  " data-bs-theme="dark">
@@ -40,7 +40,7 @@
             <li class="nav-item active">
               <a class="nav-link link active" href="pages/contacto.html">Contactos</a>
             </li>
-            <!-- <li class="nav-item link dropdown">
+            <li class="nav-item link dropdown">
               <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Productos
@@ -53,14 +53,21 @@
                 <li><a class="dropdown-item" href="pages/auriculares.html">Auriculares</a></li>
                 <li><a class="dropdown-item" href="pages/gamming.html">Gamming</a></li>
               </ul>
-            </li> -->
+            </li>
+            
           </ul>
           </div>
         </div>
-        <button id="switch" class="switch" >
+        <ul class="ul-modo">
+          <li class="p-2 switch"> 
+            <i class="fa-solid fa-sun" style="color: #5d6574;"></i>
+            <i class="fa-solid fa-moon" style="color: #5d6574;"></i>
+          </li>
+      </ul>
+        <!-- <button id="switch" class="switch" >
 					<span><i class="fa-solid fa-sun"></i></span>
 					<span><i class="fa-solid fa-moon"></i></span>
-				</button>
+				</button> -->
           <div class="d-flex cabece">
             <div class="d-flex">
             <div class="dropdown dropstart">
@@ -134,23 +141,23 @@
         <p>Computadoras</p>
       </div>
       <div class="icono-1">
-        <a href=""><i class="fa-solid fa-phone"></i></a><br>
+        <a href="pages/celulares.html"><i class="fa-solid fa-phone"></i></a><br>
         <p>Celulares</p>
       </div>
       <div class="icono-1">
-        <a href=""><i class="fa-solid fa-clock"></i></a><br>
+        <a href="pages/relojes.html"><i class="fa-solid fa-clock"></i></a><br>
         <p>SmartWatch</p>
       </div>
       <div class="icono-1">
-        <a href=""><i class="fa-solid fa-camera "></i></a><br>
+        <a href="pages/camaras.html"><i class="fa-solid fa-camera "></i></a><br>
         <p>Camaras</p>
       </div>
       <div class="icono-1">
-        <a href=""><i class="fa-solid fa-headphones"></i></a><br>
+        <a href="pages/auriculares.html"><i class="fa-solid fa-headphones"></i></a><br>
         <p>Auriculares</p>
       </div>
       <div class="icono-1">
-        <a href=""><i class="fa-solid fa-gamepad"></i></a><br>
+        <a href="pages/gamming.html"><i class="fa-solid fa-gamepad"></i></a><br>
         <p>Gamming</p>
       </div>
 
@@ -381,7 +388,7 @@
     <p class="copyrigth">&copy; 2023 Samuel Acuña. Todos los derechos reservados</p>
   </footer>
 
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 

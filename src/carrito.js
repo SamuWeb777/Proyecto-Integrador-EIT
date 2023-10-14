@@ -159,11 +159,11 @@ export function procesarPedido(e) {
             title: 'Ups!',
             html: '<strong>No hay productos en el carrito de compras!</strong>',
             confirmButtonText: 'Ir comprar',
-            confirmButtonColor: '#grey',
+            confirmButtonColor: '#343D58',
             background: '#E4EFE7'
         });
     } else {
-        location.href = './pages/carrito.html'
+        location.href = '../pages/carrito.html'
     }
 }
 
